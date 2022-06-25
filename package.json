@@ -1,0 +1,34 @@
+{
+  "name": "tokyo-v2",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "storybook": "turbo run storybook",
+    "build-storybook": "turbo run build-storybook",
+    "worker": "turbo run worker",
+    "lint": "turbo run lint",
+    "types": "turbo run types",
+    "type-check": "tsc --pretty --noEmit",
+    "pre-commit": "turbo run format lint",
+    "pre-push": "turbo run lint",
+    "prepare": "husky install",
+    "deduplicate": "npx yarn-deduplicate",
+    "upgrade-package": "yarn upgrade-interactive --latest"
+  },
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "prettier": "^2.6.2",
+    "turbo": "1.2.16"
+  },
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=14.0.0"
+  },
+  "packageManager": "yarn@1.22.17"
+}

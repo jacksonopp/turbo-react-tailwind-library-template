@@ -1,0 +1,33 @@
+{
+  "name": "ui",
+  "version": "0.0.0",
+  "main": "./index.tsx",
+  "types": "./index.tsx",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@storybook/addon-actions": "^6.4.21",
+    "@storybook/addon-essentials": "^6.4.21",
+    "@storybook/addon-links": "^6.4.21",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/react": "^6.4.21",
+    "@types/react": "^18.0.11",
+    "@types/react-dom": "^18.0.5",
+    "autoprefixer": "^10.4.7",
+    "babel-loader": "^8.2.5",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.0.24",
+    "tsconfig": "*",
+    "tw-config": "*",
+    "typescript": "^4.7.3"
+  },
+  "dependencies": {},
+  "scripts": {
+    "dev": "npx tailwindcss -i ./styles/index.css -o ./dist/output.css --watch",
+    "build": "npx tailwindcss -i ./styles/index.css -o ./dist/output.css",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook --quiet",
+    "lint": "TIMING=1 eslint components",
+    "format": "prettier --write ."
+  }
+}

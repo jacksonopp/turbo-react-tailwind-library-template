@@ -1,0 +1,32 @@
+{
+  "name": "web",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "TIMING=1 next lint",
+    "format": "prettier --write .",
+    "types": "npx openapi-typescript http://localhost:54321/rest/v1/?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24ifQ.625_WdcF3KHqz5amU0x2X5WWHP-OEs_4qj0ssLNHzTs --output types/supabase.types.ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^1.35.3",
+    "next": "12.1.6",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "ui": "*"
+  },
+  "devDependencies": {
+    "@types/react": "18.0.11",
+    "autoprefixer": "^10.4.7",
+    "config": "*",
+    "eslint": "8.17.0",
+    "next-transpile-modules": "9.0.0",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.0.24",
+    "tsconfig": "*",
+    "tw-config": "*",
+    "typescript": "^4.7.3"
+  }
+}
