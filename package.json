@@ -22,6 +22,7 @@
     "upgrade-package": "yarn upgrade-interactive --latest"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.23.0",
     "husky": "^8.0.1",
     "prettier": "^2.6.2",
     "turbo": "1.2.16"

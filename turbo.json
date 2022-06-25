@@ -17,9 +17,6 @@
       "dependsOn": ["^dev"],
       "cache": false
     },
-    "worker": {
-      "cache": false
-    },
     "storybook": {
       "cache": false
     },
