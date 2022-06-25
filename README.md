@@ -1,4 +1,4 @@
-# Tokyo Monorepo
+# Tailwind React Library creation tool
 
 Based from Turborepo starter
 
@@ -12,7 +12,6 @@ This monorepo uses [Yarn](https://classic.yarnpkg.com/lang/en/) as a package man
 
 - `next-app`: Boilerplate [Next.js](https://nextjs.org) app
 - `web`: Another [Next.js](https://nextjs.org) app
-- `workers`: Node app for background job queueing using [graphile-workers](https://github.com/graphile/worker)
 
 #### Packages
 
